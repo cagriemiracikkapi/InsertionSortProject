@@ -35,6 +35,16 @@ Aşama 5: Aşama 4 de elde ettiğimiz yeni dizi üzerinde dördüncü indexten s
 
 [2,6,16,18,22,27]
 
+Aşama 1  [2|,27,16,22,18,6] 
+
+Aşama 2  [2,6|,16,22,18,27]
+
+Aşama 3  [2,6,16|,22,18,27]
+
+Aşama 4  [2,6,16,18|,22,27]
+
+Aşama 5  [2,6,16,18,22|,27]
+
 Sonuç olarak sıralanmış dizimiz [2,6,16,18,22,27] bu şekildedir.
 
 # a.2) Insertion Sort Big-O Gösterimi
@@ -50,10 +60,41 @@ WORST Case ----> o(n²)
 
 # a.3) Time Complexity
 
-Average Case: Average case: Aradığımız sayının ortada olması ---> [22,27,16,2,18,6] 
+Average Case: Aradığımız sayının ortada olması ---> [22,27,16,2,18,6] 
 
+Worst Case: Aradığımız sayının sonda olması ---> [27,22,18,16,6,2] 
 
+Best Case: Aradığımız sayının başta olması ---> [2,6,16,18,22,27]
 
+# a.4) 18 Sayısının Case Kapsamı
+
+18 sayısı kendi olması gereken yerin ortasında olduğundan Average Case Kapsamına girer.
+
+# b) [7,3,5,8,2,9,4,15,6] Dizisinin Insertion Sort'a Göre İlk Dört Aşaması
+
+Aşama 1: En küçük değer(2) bulunarak ilk index ile yer değiştirilir.
+
+[7,3,5,8,2,9,4,15,6] --> [2,3,5,8,7,9,4,15,6]
+
+Aşama 2: Aşama 1 de elde edilen dizide ilk indexten sonraki değerlerin en küçüğü(3) bulunarak ikinci index(3) ile yer değiştirilir. Bu aşamada halihazırda en küçük değerimiz ikinci indextedir. Bu yüzden dizide herhangi bir değişiklik yapılmaz
+
+[2,3,5,8,7,9,4,15,6]
+
+Aşama 3: Aşama 2 de elde edilen dizide ikinci indexten sonraki değerlerin en küçüğü(4) bulunarak üçüncü index(5) ile yer değiştirilir.
+
+[2,3,5,8,7,9,4,15,6] --> [2,3,4,8,7,9,5,15,6]
+
+Aşama 4: Aşama 3 de elde edilen dizide üçüncü indexten sonraki değerlerin en küçüğü(5) bulunarak dördüncü index(8) ile yer değiştirilir.
+
+[2,3,4,8,7,9,5,15,6] --> [2,3,4,5,7,9,8,15,6]
+
+Aşama 1  [2|,3,5,8,7,9,4,15,6]
+
+Aşama 2  [2,3|,5,8,7,9,4,15,6]
+
+Aşama 3  [2,3,4|,8,7,9,5,15,6]
+
+Aşama 4  [2,3,4,5|,7,9,8,15,6]
 
 
 
