@@ -1,4 +1,6 @@
 # Patika.Dev-Proje1-InsertionSortProjesi
+www.patika.dev
+
 Projede bizden istenilenler aşağıda belirtilmiştir.
 
 a) [22,27,16,2,18,6] -> Insertion Sort
