@@ -40,11 +40,17 @@ Sonuç olarak sıralanmış dizimiz [2,6,16,18,22,27] bu şekildedir.
 # a.2) Insertion Sort Big-O Gösterimi
 Bu sıralama yönteminde elimizde n kadar sayı bulunsun. İlk aşamada n kadar sayı kontrol edilip en küçüğü ilk index ile yer değiştirilir. Ardından ilk index harici kalan sayılar (n-1) kontrol edilip en küçüğü ikinci index ile yer değiştirilir. Bu işlem son sayıya kadar devam eder. n+(n-1)+(n-2)+(n-3).....+1 burdaki işlem 1 den n e kadar olan sayıların toplamını belirtir. Matematikten bildiğimiz üzere 1 den n'e kadar olan sayıların toplamı [n*(n+1)/2] şeklinde bulunur. 
 
-Bunu açarsak (n^2+n)/2 elde ederiz. Big-O gösteriminde domine fonksiyon alınır. Burada domine fonksiyon n^2 dir.
+Bunu açarsak (n²+n)/2 elde ederiz. Big-O gösteriminde domine fonksiyon alınır. Burada domine fonksiyon n² dir.
 
-Sonuç olarak insertion sort'un Big-O gösterimi o(n^2) dir.
+BEST Case -----> o(n)
 
+AVERAGE Case --> o(n²)
 
+WORST Case ----> o(n²)
+
+# a.3) Time Complexity
+
+Average Case: Average case: Aradığımız sayının ortada olması ---> [22,27,16,2,18,6] 
 
 
 
